@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!-- define app and controller -->
+<html ng-app="linkApp" ng-controller="mainController">
+	
+<head>
+	
+	<!-- pull in css based on angular ($scope.css from mainController) -->
+	<link rel="stylesheet" ng-href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/{{ css }}/bootstrap.min.css">
+	<link rel="stylesheet" ng-href="layout-{{ layout }}.css">
+	<style>
+		body { padding-top: 50px; }
+	</style>
+	
+	<!-- bring in JS and Angular -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body class="container">
+	
+	<pre>{{ bootstraps }}</pre>
+	<pre>{{ layouts }}</pre>
+	
+</body>
+</html>
