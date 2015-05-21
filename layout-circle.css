@@ -2,7 +2,7 @@
 	display: block;
 	width: 400px;
 	height: 400px;
-	overflow: hideen;
+	overflow: hidden;
 	margin: 0 auto;
 	border-radius: 50%;
 }
