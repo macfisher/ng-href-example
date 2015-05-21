@@ -19,8 +19,34 @@
 
 <body class="container">
 	
-	<pre>{{ bootstraps }}</pre>
-	<pre>{{ layouts }}</pre>
+	<!-- style selection -->
+	<div class="well">
+		<form>
+			
+			<div class="form-group">
+				<label>Theme</label>
+				<select class="form-control" ng-model="css" ng-options="bootstrap.url as bootstrap.name for bootstrap in bootstraps"></select>
+			</div>
+			
+			<div class="form-group">
+				<label>Layout</label>
+				<select class="form-control" ng-model="layout" ng-options="layout.url as layout.name for layout in layouts"></select>
+			</div>
+			
+		</form>
+	</div>
+	
+	
+	<!-- content -->
+	<div class="picture-thing">
+		<div class="picture-thing-img">
+			<img src="https://cask.scotch.io/2014/10/picture-picture.jpg">
+		</div>
+		<div class="picture-thing-content">
+			<h2>Seek your mentor...</h2>
+			<p>and get Drunk.</p>
+		</div>
+	</div>
 	
 </body>
 </html>
